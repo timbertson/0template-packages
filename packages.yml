@@ -1,0 +1,123 @@
+#distros:
+# rpm
+# debian
+# gentoo
+# slack
+# ports
+
+# jquery interface for distromatch:
+# http://dde.debian.net/distromatch-frontend.htm
+
+cluster-ssh:
+  package: clusterssh
+  name: Cluster SSH
+  summary: control multiple SSH sessions
+dbus-python:
+  package: python-dbus
+expect:
+  summary: Programmatically control TTY sessions
+  package: expect
+libmono:
+  rpm: mono-core
+  debian: libmono2.0-cil
+libnotify-bin:
+  debian: libnotify-bin
+  rpm: libnotify
+libxrender:
+  debian: libxrender
+  rpm: libXrender
+libxrender-dev:
+  debian: libxrender-dev
+  rpm: libXrender-devel
+mono:
+  package: mono-core
+mono-runtime:
+  rpm: mono-core
+  debian: mono-runtime
+mono-winforms:
+  rpm: mono-winforms
+  debian: libmono-winforms-2.0-cil
+openssl-dev:
+  debian: openssl-devel
+  rpm: libssl-dev
+pandoc:
+  homepage: http://johnmacfarlane.net/pandoc/
+  package: pandoc
+  name: Markup conversion tool
+pycrypto:
+  package: python-crypto
+pynotify:
+  debian: python-notify
+  rpm: notify-python
+  summary: python bindings for libnotify
+  homepage: http://www.galago-project.org/
+python2.7-devel:
+  debian: python2.7-dev
+  rpm: python-devel
+  summary: python development files (python 2.7)
+python3:
+  summary: Python 3
+  main: /usr/bin/python3
+  package: python3
+python-appindicator:
+python-devel:
+  summary: python development files
+  debian: python-dev
+  rpm: python-devel
+python-twisted:
+  summary: twisted framework for python
+  description: Twisted is an event-driven networking engine written in Python and licensed under the MIT license.
+  homepage: http://twistedmatrix.com/trac/
+qmake-qt4:
+  rpm: qt-devel
+  debian: qt-dev-tools
+  summary: qt build tool
+qt-webkit:
+rtmpdump:
+  homepage: http://rtmpdump.mplayerhq.hu/
+  summary: rtmp stream toolkit
+  package: rtmpdump
+ruby-1.8:
+  summary: ruby language interpreter
+  debian:
+    package: ruby1.8
+    main: /usr/bin/ruby1.8
+  rpm:
+    package: ruby
+    main: /usr/bin/ruby
+sitecopy:
+  package: sitecopy
+  main: /usr/bin/sitecopy
+tagpy:
+  debian: python-tagpy
+  rpm: python-tag
+  summary: music tag manipulation library
+  homepage: http://pypi.python.org/pypi/tagpy
+tmux:
+  package: tmux
+  main: /usr/bin/tmux
+  summary: terminal multiplexer
+  homepage: http://tmux.sourceforge.net/
+waf:
+  homepage: http://code.google.com/p/waf/
+  description: Waf is a Python-based framework for configuring, compiling and installing applications.
+  package: waf
+  summary: build tool
+wxpython:
+  rpm: wxPython
+  debian: python-wxgtk2.8
+xmllint:
+  debian:
+    package: libxml2-utils
+    main: /usr/bin/xmllint
+  rpm:
+    package: libxml2
+    main: /usr/bin/xmllint
+xsel:
+  package: xsel
+  summary: command line X buffer / clipboard manipulation
+  main: /usr/bin/xsel
+zenity:
+  package: zenity
+  main: /usr/bin/zenity
+

@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type='text/xsl' href='interface.xsl'?>
+<interface uri="http://gfxmonk.net/dist/0install/{{name}}.xml" xmlns="http://zero-install.sourceforge.net/2004/injector/interface">
+	<name>{{name}}</name>
+	{% if summary %}
+	<summary>{{summary}}</summary>
+	{% else %}
+	<summary>{{name}}</summary>
+	{% endif %}
+	<publish mode="package" xmlns="http://gfxmonk.net/dist/0install"/>
+
+	{% if description %}
+		<description>{{description}}</description>
+	{% else %}
+		{% if summary %}
+			<description>{{summary}}</description>
+		{% else %}
+			<description>{{name}} (package implementation)</description>
+		{% endif %}
+	{% endif %}
+
+	{% if homepage %}
+	<homepage>{{homepage}}</homepage>
+	{% endif %}
+
+	{% if package %}
+		{% if main %}
+	<package-implementation package="{{package}}" main="{{main}}"/>
+		{% else %}
+	<package-implementation package="{{package}}"/>
+		{% endif %}
+	{% endif %}
+
+	{% for distro, spec in distros.items() %}
+		{% if spec.main %}
+	<package-implementation package="{{spec.package}}" main="{{spec.main}}" distributions="{{spec.distro_name}}"/>
+		{% else %}
+	<package-implementation package="{{spec.package}}" distributions="{{spec.distro_name}}"/>
+		{% endif %}
+	{% endfor %}
+</interface>

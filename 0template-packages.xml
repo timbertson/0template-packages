@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type='text/xsl' href='interface.xsl'?>
+<interface uri="http://gfxmonk.net/dist/0install/0template-packages.xml" xmlns="http://zero-install.sourceforge.net/2004/injector/interface">
+	<name>0template-packages</name>
+	<summary>generate zero install package feeds</summary>
+	<publish mode="ignore" xmlns="http://gfxmonk.net/dist/0install"/>
+	<description>
+	
+	</description>
+	<package-implementation package="___" distributions="Debian|RPM"/>
+
+	<group main="gen.py">
+		<requires interface="http://gfxmonk.net/dist/0install/pyyaml-python2.xml"/>
+		<requires interface="http://gfxmonk.net/dist/0install/jinja2.xml"/>
+		<implementation id="." version="0.0.1">
+		</implementation>
+	</group>
+</interface>

@@ -1,0 +1,2 @@
+#!/bin/bash
+0launch 0template-packages.xml "$@"
