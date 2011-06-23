@@ -38,8 +38,8 @@ mono-winforms:
   rpm: mono-winforms
   debian: libmono-winforms-2.0-cil
 openssl-dev:
-  debian: openssl-devel
-  rpm: libssl-dev
+  rpm: openssl-devel
+  debian: libssl-dev
 pandoc:
   homepage: http://johnmacfarlane.net/pandoc/
   package: pandoc
@@ -120,4 +120,63 @@ xsel:
 zenity:
   package: zenity
   main: /usr/bin/zenity
+
+# mutter dependencies:
+mutter:
+  package: mutter
+mutter-dev:
+  rpm: mutter-devel
+  debian: mutter-dev
+clutter-dev:
+  package: clutter-devel
+pango-dev:
+  package: pango-devel
+startup-notification-dev:
+  package: startup-notification-devel
+gtk3-dev:
+  package: gtk3-devel
+pkgconfig:
+  package: pkgconfig
+gconf2-dev:
+  package: GConf2-devel
+gobject-introspection-dev:
+  package: gobject-introspection-devel
+libsm-dev:
+  package: libSM-devel
+libx11-dev:
+  package: libX11-devel
+libxdamage-dev:
+  package: libXdamage-devel
+libxext-dev:
+  package: libXext-devel
+libxrandr-dev:
+  package: libXrandr-devel
+libxcursor-dev:
+  package: libXcursor-devel
+libxcomposite-dev:
+  package: libXcomposite-devel
+zenity:
+  package: zenity
+gnome-doc-utils:
+  package: gnome-doc-utils
+desktop-file-utils:
+  package: desktop-file-utils
+gtk-doc:
+  package: gtk-doc
+gnome-common:
+  package: gnome-common
+intltool:
+  package: intltool
+libcanberra-dev:
+  package: libcanberra-devel
+control-center-filesystem:
+  package: control-center-filesystem
+startup-notification:
+  package: startup-notification
+gconf2:
+  package: GConf2
+dbus-x11:
+  package: dbus-x11
+gnome-shell:
+  package: gnome-shell
 
