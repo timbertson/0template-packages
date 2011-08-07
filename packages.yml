@@ -88,6 +88,9 @@ ruby-1.8:
 sitecopy:
   package: sitecopy
   main: /usr/bin/sitecopy
+systemd:
+  package: systemd
+  main: /bin/systemd
 tagpy:
   debian: python-tagpy
   rpm: python-tag
