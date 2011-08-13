@@ -77,14 +77,23 @@ rtmpdump:
   homepage: http://rtmpdump.mplayerhq.hu/
   summary: rtmp stream toolkit
   package: rtmpdump
-ruby-1.8:
+ruby:
   summary: ruby language interpreter
+  package: ruby
+ruby-1.8:
+  summary: ruby language interpreter (1.8)
   debian:
     package: ruby1.8
     main: /usr/bin/ruby1.8
   rpm:
     package: ruby
     main: /usr/bin/ruby
+ruby-dev:
+  summary: ruby development files
+  debian:
+    package: ruby-dev
+  rpm:
+    package: ruby-devel
 sitecopy:
   package: sitecopy
   main: /usr/bin/sitecopy

@@ -7,7 +7,6 @@
 	<description>
 	
 	</description>
-	<package-implementation package="___" distributions="Debian|RPM"/>
 
 	<group main="gen.py">
 		<requires interface="http://gfxmonk.net/dist/0install/pyyaml-python2.xml"/>
