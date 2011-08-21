@@ -97,6 +97,9 @@ ruby-dev:
 sitecopy:
   package: sitecopy
   main: /usr/bin/sitecopy
+socat:
+  pacakge: socat
+  main: /usr/bin/socat
 systemd:
   package: systemd
   main: /bin/systemd
