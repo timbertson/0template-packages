@@ -17,6 +17,11 @@ dbus-python:
 expect:
   summary: Programmatically control TTY sessions
   package: expect
+imagemagick:
+  summary: Convert, Edit, And Compose Images
+  homepage: http://www.imagemagick.org/script/index.php
+  rpm: ImageMagick
+  debian: imagemagick
 libmono:
   rpm: mono-core
   debian: libmono2.0-cil
@@ -37,6 +42,10 @@ mono-runtime:
 mono-winforms:
   rpm: mono-winforms
   debian: libmono-winforms-2.0-cil
+numpy:
+  rpm: numpy
+  debian: python-numpy
+  summary: Python numeric computing library
 openssl-dev:
   rpm: openssl-devel
   debian: libssl-dev
@@ -64,6 +73,9 @@ python-devel:
   summary: python development files
   debian: python-dev
   rpm: python-devel
+python-imaging:
+  summary: Python Imaging Library (PIL)
+  package: python-imaging
 python-twisted:
   summary: twisted framework for python
   description: Twisted is an event-driven networking engine written in Python and licensed under the MIT license.
