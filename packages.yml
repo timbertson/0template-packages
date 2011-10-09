@@ -12,6 +12,9 @@ cluster-ssh:
   package: clusterssh
   name: Cluster SSH
   summary: control multiple SSH sessions
+cpp:
+  package: cpp
+  summary: "the C preprocessor"
 dbus-python:
   package: python-dbus
 expect:
@@ -53,6 +56,8 @@ pandoc:
   homepage: http://johnmacfarlane.net/pandoc/
   package: pandoc
   name: Markup conversion tool
+php-cgi:
+  package: php-cli
 pycrypto:
   package: python-crypto
 pynotify:
@@ -92,6 +97,7 @@ rtmpdump:
 ruby:
   summary: ruby language interpreter
   package: ruby
+  main: /usr/bin/ruby
 ruby-1.8:
   summary: ruby language interpreter (1.8)
   debian:
@@ -147,6 +153,9 @@ xsel:
 zenity:
   package: zenity
   main: /usr/bin/zenity
+zsh:
+  package: zsh
+  main: /bin/zsh
 
 # mutter dependencies:
 mutter:
