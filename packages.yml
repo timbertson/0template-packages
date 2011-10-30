@@ -17,6 +17,9 @@ cpp:
   summary: "the C preprocessor"
 dbus-python:
   package: python-dbus
+deborphan:
+  package: deborphan
+  main: /usr/bin/deborphan
 expect:
   summary: Programmatically control TTY sessions
   package: expect
@@ -42,6 +45,9 @@ mono:
 mono-runtime:
   rpm: mono-core
   debian: mono-runtime
+meld:
+  package: meld
+  main: /usr/bin/meld
 mono-winforms:
   rpm: mono-winforms
   debian: libmono-winforms-2.0-cil
@@ -56,6 +62,8 @@ pandoc:
   homepage: http://johnmacfarlane.net/pandoc/
   package: pandoc
   name: Markup conversion tool
+parcellite:
+  package: parcellite
 php-cgi:
   package: php-cli
 pycrypto:
@@ -139,6 +147,12 @@ waf:
 wxpython:
   rpm: wxPython
   debian: python-wxgtk2.8
+xbindkeys:
+  package: xbindkeys
+  main: /usr/bin/xbindkeys
+xkbcomp:
+  package: x11-xkb-utils
+  main: /usr/bin/xkbcomp
 xmllint:
   debian:
     package: libxml2-utils
@@ -146,10 +160,16 @@ xmllint:
   rpm:
     package: libxml2
     main: /usr/bin/xmllint
+xte:
+  package: xautomation
+  main: /usr/bin/xte
 xsel:
   package: xsel
   summary: command line X buffer / clipboard manipulation
   main: /usr/bin/xsel
+xsltproc:
+  package: xsltproc
+  main: /usr/bin/xsltproc
 zenity:
   package: zenity
   main: /usr/bin/zenity
@@ -193,6 +213,12 @@ libxcomposite-dev:
   package: libXcomposite-devel
 zenity:
   package: zenity
+git:
+  package: git
+  main: /usr/bin/git
+gnome-do:
+  package: gnome-do
+  main: /usr/bin/gnome-do
 gnome-doc-utils:
   package: gnome-doc-utils
 desktop-file-utils:
