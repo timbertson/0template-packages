@@ -15,6 +15,9 @@ cluster-ssh:
 cpp:
   package: cpp
   summary: "the C preprocessor"
+curl:
+  package: curl
+  main: /usr/bin/curl
 dbus-python:
   package: python-dbus
 deborphan:
@@ -139,6 +142,9 @@ tmux:
   main: /usr/bin/tmux
   summary: terminal multiplexer
   homepage: http://tmux.sourceforge.net/
+tree:
+  package: tree
+  main: /usr/bin/tree
 waf:
   homepage: http://code.google.com/p/waf/
   description: Waf is a Python-based framework for configuring, compiling and installing applications.
@@ -216,6 +222,9 @@ zenity:
 git:
   package: git
   main: /usr/bin/git
+gitg:
+  package: gitg
+  main: /usr/bin/gitg
 gnome-do:
   package: gnome-do
   main: /usr/bin/gnome-do
@@ -241,4 +250,5 @@ dbus-x11:
   package: dbus-x11
 gnome-shell:
   package: gnome-shell
+  main: /usr/bin/gnome-shell
 
