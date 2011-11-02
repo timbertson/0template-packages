@@ -190,33 +190,47 @@ mutter-dev:
   rpm: mutter-devel
   debian: mutter-dev
 clutter-dev:
-  package: clutter-devel
+  rpm: clutter-devel
+  debian: clutter-dev
 pango-dev:
-  package: pango-devel
+  rpm: pango-devel
+  debian: pango-dev
 startup-notification-dev:
-  package: startup-notification-devel
+  rpm: startup-notification-devel
+  debian: startup-notification-dev
 gtk3-dev:
-  package: gtk3-devel
+  rpm: gtk3-devel
+  debian: libgtk3-dev
 pkgconfig:
-  package: pkgconfig
+  rpm: pkgconfig
+  debian: pkg-config
 gconf2-dev:
-  package: GConf2-devel
+  rpm: GConf2-devel
+  debian: gconf2-dev
 gobject-introspection-dev:
-  package: gobject-introspection-devel
+  rpm: gobject-introspection-devel
+  debian: gobject-introspection
 libsm-dev:
-  package: libSM-devel
+  rpm: libSM-devel
+  debian: libsm-dev
 libx11-dev:
-  package: libX11-devel
+  rpm: libX11-devel
+  debian: libx11-dev
 libxdamage-dev:
-  package: libXdamage-devel
+  rpm: libXdamage-devel
+  debian: libxdamage-dev
 libxext-dev:
-  package: libXext-devel
+  rpm: libXext-devel
+  debian: libxext-dev
 libxrandr-dev:
-  package: libXrandr-devel
+  rpm: libXrandr-devel
+  debian: libxrandr-dev
 libxcursor-dev:
-  package: libXcursor-devel
+  rpm: libXcursor-devel
+  debian: libxcursor-dev
 libxcomposite-dev:
-  package: libXcomposite-devel
+  rpm: libXcomposite-devel
+  debian: libxcomposite-dev
 zenity:
   package: zenity
 git:
@@ -234,6 +248,8 @@ desktop-file-utils:
   package: desktop-file-utils
 gtk-doc:
   package: gtk-doc
+  rpm: gtk-doc
+  debian: gtk-doc-tools
 gnome-common:
   package: gnome-common
 intltool:
