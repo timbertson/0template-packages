@@ -96,6 +96,8 @@ python-twisted:
   summary: twisted framework for python
   description: Twisted is an event-driven networking engine written in Python and licensed under the MIT license.
   homepage: http://twistedmatrix.com/trac/
+python-wnck:
+  package: python-wnck
 qmake-qt4:
   rpm: qt-devel
   debian: qt-dev-tools
@@ -156,6 +158,9 @@ wxpython:
 xbindkeys:
   package: xbindkeys
   main: /usr/bin/xbindkeys
+xdotool:
+  package: xdotool
+  main: /usr/bin/xdotool
 xkbcomp:
   package: x11-xkb-utils
   main: /usr/bin/xkbcomp
