@@ -103,6 +103,9 @@ qmake-qt4:
   debian: qt-dev-tools
   summary: qt build tool
 qt-webkit:
+rlwrap:
+  package: rlwrap
+  main: /usr/bin/rlwrap
 rtmpdump:
   homepage: http://rtmpdump.mplayerhq.hu/
   summary: rtmp stream toolkit
