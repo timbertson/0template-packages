@@ -8,6 +8,9 @@
 # jquery interface for distromatch:
 # http://dde.debian.net/distromatch-frontend.htm
 
+cabal:
+  package: cabal-install
+  main: /usr/bin/cabal
 cluster-ssh:
   package: clusterssh
   name: Cluster SSH
@@ -26,6 +29,9 @@ deborphan:
 expect:
   summary: Programmatically control TTY sessions
   package: expect
+haml:
+  package: libhaml-ruby
+  main: /usr/bin/haml
 imagemagick:
   summary: Convert, Edit, And Compose Images
   homepage: http://www.imagemagick.org/script/index.php
@@ -54,6 +60,9 @@ meld:
 mono-winforms:
   rpm: mono-winforms
   debian: libmono-winforms-2.0-cil
+mp3gain:
+  package: mp3gain
+  main: /usr/bin/mp3gain
 numpy:
   rpm: numpy
   debian: python-numpy
