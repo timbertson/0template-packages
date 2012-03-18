@@ -109,9 +109,11 @@ python-wnck:
   package: python-wnck
 qmake-qt4:
   rpm: qt-devel
-  debian: qt-dev-tools
+  debian: qt4-qmake
   summary: qt build tool
 qt-webkit:
+  rpm: qt-webkit
+  debian: libqtwebkit4
 rlwrap:
   package: rlwrap
   main: /usr/bin/rlwrap
@@ -143,6 +145,9 @@ sitecopy:
 socat:
   pacakge: socat
   main: /usr/bin/socat
+sphinx:
+  package: python-sphinx
+  main: sphinx-build
 systemd:
   package: systemd
   main: /bin/systemd
@@ -159,6 +164,9 @@ tmux:
 tree:
   package: tree
   main: /usr/bin/tree
+unetbootin:
+  package: unetbootin
+  main: /usr/bin/unetbootin
 waf:
   homepage: http://code.google.com/p/waf/
   description: Waf is a Python-based framework for configuring, compiling and installing applications.
@@ -203,6 +211,8 @@ zsh:
 # mutter dependencies:
 mutter:
   package: mutter
+  debian:
+    package: libmutter0
 mutter-dev:
   rpm: mutter-devel
   debian: mutter-dev
@@ -284,4 +294,7 @@ dbus-x11:
 gnome-shell:
   package: gnome-shell
   main: /usr/bin/gnome-shell
+  gentoo:
+    package: gnome-base/gnome-shell
+    main: /usr/bin/gnome-shell
 
