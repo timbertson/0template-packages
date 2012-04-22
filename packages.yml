@@ -94,6 +94,9 @@ python3:
   main: /usr/bin/python3
   package: python3
 python-appindicator:
+python-tornado:
+python-zeromq:
+  package: python-zmq
 python-devel:
   summary: python development files
   debian: python-dev
@@ -105,6 +108,7 @@ python-twisted:
   summary: twisted framework for python
   description: Twisted is an event-driven networking engine written in Python and licensed under the MIT license.
   homepage: http://twistedmatrix.com/trac/
+python-unittest2:
 python-wnck:
   package: python-wnck
 qmake-qt4:
@@ -147,7 +151,7 @@ socat:
   main: /usr/bin/socat
 sphinx:
   package: python-sphinx
-  main: sphinx-build
+  main: /usr/bin/sphinx-build
 systemd:
   package: systemd
   main: /bin/systemd
@@ -201,6 +205,12 @@ xsel:
 xsltproc:
   package: xsltproc
   main: /usr/bin/xsltproc
+xvfb:
+  package: xvfb
+  main: /usr/bin/Xvfb
+xephyr:
+  package: xserver-xephyr
+  main: /usr/bin/Xephyr
 zenity:
   package: zenity
   main: /usr/bin/zenity
@@ -263,6 +273,7 @@ zenity:
 git:
   package: git
   main: /usr/bin/git
+  cygwin: /usr/bin/git.exe
 gitg:
   package: gitg
   main: /usr/bin/gitg

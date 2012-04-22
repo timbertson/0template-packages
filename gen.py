@@ -31,6 +31,7 @@ DISTS = {
 		'slack': 'Slack',
 		'ports': 'Ports',
 		'gentoo': 'Gentoo',
+		'cygwin': 'Cygwin',
 	}
 
 def process(prefix, config, template):
