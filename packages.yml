@@ -94,7 +94,6 @@ python3:
   main: /usr/bin/python3
   package: python3
 python-appindicator:
-python-tornado:
 python-zeromq:
   package: python-zmq
 python-devel:
