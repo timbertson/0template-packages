@@ -142,6 +142,9 @@ ruby-dev:
     package: ruby-dev
   rpm:
     package: ruby-devel
+rygel:
+  package: rygel
+  main: /usr/bin/rygel
 sitecopy:
   package: sitecopy
   main: /usr/bin/sitecopy
@@ -185,7 +188,8 @@ xdotool:
   package: xdotool
   main: /usr/bin/xdotool
 xkbcomp:
-  package: x11-xkb-utils
+  debian: x11-xkb-utils
+  rpm: xorg-x11-xkb-utils
   main: /usr/bin/xkbcomp
 xmllint:
   debian:
@@ -204,12 +208,21 @@ xsel:
 xsltproc:
   package: xsltproc
   main: /usr/bin/xsltproc
+  debian:
+    package: xsltproc
+    main: /usr/bin/xsltproc
+  rpm:
+    package: libxslt
+    main: /usr/bin/xsltproc
 xvfb:
   package: xvfb
   main: /usr/bin/Xvfb
 xephyr:
   package: xserver-xephyr
   main: /usr/bin/Xephyr
+wget:
+  package: wget
+  main: /usr/bin/wget
 zenity:
   package: zenity
   main: /usr/bin/zenity
