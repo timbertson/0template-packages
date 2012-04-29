@@ -29,6 +29,8 @@ deborphan:
 expect:
   summary: Programmatically control TTY sessions
   package: expect
+guake:
+  main: /usr/bin/guake
 haml:
   package: libhaml-ruby
   main: /usr/bin/haml
@@ -108,8 +110,14 @@ python-twisted:
   description: Twisted is an event-driven networking engine written in Python and licensed under the MIT license.
   homepage: http://twistedmatrix.com/trac/
 python-unittest2:
+python-webkit:
+  package: python-webkit
+  debian: python-webkit
+  rpm: pywebkitgtk
 python-wnck:
   package: python-wnck
+  debian: python-wnck
+  rpm: gnome-python2-libwnck
 qmake-qt4:
   rpm: qt-devel
   debian: qt4-qmake
