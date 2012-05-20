@@ -29,6 +29,9 @@ deborphan:
 expect:
   summary: Programmatically control TTY sessions
   package: expect
+glib-compile-schemas:
+  package: glib2
+  main: /usr/bin/glib-compile-schemas
 guake:
   main: /usr/bin/guake
 haml:
@@ -43,8 +46,14 @@ libmono:
   rpm: mono-core
   debian: libmono2.0-cil
 libnotify-bin:
-  debian: libnotify-bin
-  rpm: libnotify
+  debian:
+    package: libnotify-bin
+    main: /usr/bin/notify-send
+  rpm:
+    package: libnotify
+    main: /usr/bin/notify-send
+  package: libnotify-bin
+  main: /usr/bin/notify-send
 libxrender:
   debian: libxrender
   rpm: libXrender
@@ -213,6 +222,10 @@ xsel:
   package: xsel
   summary: command line X buffer / clipboard manipulation
   main: /usr/bin/xsel
+xclip:
+  package: xclip
+  summary: command line X buffer / clipboard manipulation
+  main: /usr/bin/xclip
 xsltproc:
   package: xsltproc
   main: /usr/bin/xsltproc
