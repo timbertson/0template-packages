@@ -159,6 +159,14 @@ ruby-dev:
     package: ruby-dev
   rpm:
     package: ruby-devel
+runghc:
+  package: ghc
+  summary: Glasgow Haskell Compiler (interpreter)
+  main: /usr/bin/runghc
+ghc:
+  package: ghc
+  summary: Glasgow Haskell Compiler
+  main: /usr/bin/ghc
 rygel:
   package: rygel
   main: /usr/bin/rygel
