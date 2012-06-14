@@ -29,6 +29,8 @@ deborphan:
 expect:
   summary: Programmatically control TTY sessions
   package: expect
+ffmpeg:
+  main: /usr/bin/ffmpeg
 glib-compile-schemas:
   package: glib2
   main: /usr/bin/glib-compile-schemas
@@ -114,6 +116,12 @@ python-devel:
 python-imaging:
   summary: Python Imaging Library (PIL)
   package: python-imaging
+python-imaging-tk:
+  summary: Python Imaging Library TK components
+  rpm:
+    package: python-imaging-tk
+  debian:
+    package: python-imaging
 python-twisted:
   summary: twisted framework for python
   description: Twisted is an event-driven networking engine written in Python and licensed under the MIT license.
@@ -187,6 +195,7 @@ tagpy:
   rpm: python-tag
   summary: music tag manipulation library
   homepage: http://pypi.python.org/pypi/tagpy
+tkinter:
 tmux:
   package: tmux
   main: /usr/bin/tmux
