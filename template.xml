@@ -31,6 +31,10 @@
 		{% endif %}
 	{% endif %}
 
+	{% for feed in feeds %}
+	<feed src="{{feed}}"/>
+	{% endfor %}
+
 	{% for distro, spec in distros.items() %}
 		{% if spec.main %}
 	<package-implementation package="{{spec.package}}" main="{{spec.main}}" distributions="{{spec.distro_name}}"/>

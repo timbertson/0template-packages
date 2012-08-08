@@ -76,6 +76,9 @@ mono-winforms:
 mp3gain:
   package: mp3gain
   main: /usr/bin/mp3gain
+nekovm:
+  package: nekovm
+  main: /usr/bin/neko
 numpy:
   rpm: numpy
   debian: python-numpy
@@ -195,6 +198,8 @@ tagpy:
   rpm: python-tag
   summary: music tag manipulation library
   homepage: http://pypi.python.org/pypi/tagpy
+tig:
+  main: /usr/bin/tig
 tkinter:
 tmux:
   package: tmux
