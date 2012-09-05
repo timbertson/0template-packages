@@ -187,9 +187,6 @@ sitecopy:
 socat:
   pacakge: socat
   main: /usr/bin/socat
-sphinx:
-  package: python-sphinx
-  main: /usr/bin/sphinx-build
 systemd:
   package: systemd
   main: /bin/systemd
