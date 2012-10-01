@@ -8,6 +8,9 @@
 # jquery interface for distromatch:
 # http://dde.debian.net/distromatch-frontend.htm
 
+bsdtar:
+  package: bsdtar
+  main: /usr/bin/bsdtar
 cabal:
   package: cabal-install
   main: /usr/bin/cabal
@@ -29,8 +32,12 @@ deborphan:
 expect:
   summary: Programmatically control TTY sessions
   package: expect
+fakechroot:
+  main: /usr/bin/fakechroot
 ffmpeg:
   main: /usr/bin/ffmpeg
+funionfs:
+  main: /usr/bin/funionfs
 glib-compile-schemas:
   package: glib2
   main: /usr/bin/glib-compile-schemas
@@ -94,6 +101,18 @@ parcellite:
   package: parcellite
 php-cgi:
   package: php-cli
+perl:
+  package: perl
+  main: /usr/bin/perl
+  debian:
+    package: perl
+    main: /usr/bin/perl
+  rpm:
+    package: perl
+    main: /usr/bin/perl
+  gentoo:
+    package: dev-lang/perl
+    main: /usr/bin/perl
 pycrypto:
   package: python-crypto
 pynotify:
@@ -139,8 +158,12 @@ python-wnck:
   debian: python-wnck
   rpm: gnome-python2-libwnck
 qmake-qt4:
-  rpm: qt-devel
-  debian: qt4-qmake
+  rpm:
+    package: qt-devel
+    main: /usr/bin/qmake-qt4
+  debian:
+    package: qt4-qmake
+    main: /usr/bin/qmake-qt4
   summary: qt build tool
 qt-webkit:
   rpm: qt-webkit
@@ -195,6 +218,8 @@ tagpy:
   rpm: python-tag
   summary: music tag manipulation library
   homepage: http://pypi.python.org/pypi/tagpy
+tarsnap:
+  main: /usr/bin/tarsnap
 tig:
   main: /usr/bin/tig
 tkinter:
@@ -203,9 +228,6 @@ tmux:
   main: /usr/bin/tmux
   summary: terminal multiplexer
   homepage: http://tmux.sourceforge.net/
-tree:
-  package: tree
-  main: /usr/bin/tree
 unetbootin:
   package: unetbootin
   main: /usr/bin/unetbootin
