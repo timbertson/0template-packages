@@ -8,6 +8,9 @@
 # jquery interface for distromatch:
 # http://dde.debian.net/distromatch-frontend.htm
 
+bash:
+  package: bash
+  main: /bin/bash
 bsdtar:
   package: bsdtar
   main: /usr/bin/bsdtar
@@ -29,6 +32,10 @@ dbus-python:
 deborphan:
   package: deborphan
   main: /usr/bin/deborphan
+eog:
+  summary: Eye of Gnome - image viewer
+  package: eog
+  main: /usr/bin/eog
 expect:
   summary: Programmatically control TTY sessions
   package: expect
