@@ -32,6 +32,8 @@ dbus-python:
 deborphan:
   package: deborphan
   main: /usr/bin/deborphan
+ecryptfs-utils:
+  package: ecryptfs-utils
 eog:
   summary: Eye of Gnome - image viewer
   package: eog
@@ -48,6 +50,9 @@ funionfs:
 glib-compile-schemas:
   package: glib2
   main: /usr/bin/glib-compile-schemas
+gthumb:
+  package: gthumb
+  main: /usr/bin/gthumb
 guake:
   main: /usr/bin/guake
 haml:
@@ -175,6 +180,13 @@ qmake-qt4:
 qt-webkit:
   rpm: qt-webkit
   debian: libqtwebkit4
+rake:
+  debian:
+    package: rake
+    main: /usr/bin/rake
+  rpm:
+    package: rubygem-rake
+    main: /usr/bin/rake
 rlwrap:
   package: rlwrap
   main: /usr/bin/rlwrap
@@ -383,10 +395,4 @@ gconf2:
   package: GConf2
 dbus-x11:
   package: dbus-x11
-gnome-shell:
-  package: gnome-shell
-  main: /usr/bin/gnome-shell
-  gentoo:
-    package: gnome-base/gnome-shell
-    main: /usr/bin/gnome-shell
 
