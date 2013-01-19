@@ -75,12 +75,16 @@ libnotify-bin:
     main: /usr/bin/notify-send
   package: libnotify-bin
   main: /usr/bin/notify-send
+libstdc++:
+  package: libstdc++
 libxrender:
   debian: libxrender
   rpm: libXrender
 libxrender-dev:
   debian: libxrender-dev
   rpm: libXrender-devel
+libXxf86vm:
+  package: libXxf86vm
 mono:
   package: mono-core
 mono-runtime:
