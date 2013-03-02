@@ -99,6 +99,11 @@ mono-winforms:
 mp3gain:
   package: mp3gain
   main: /usr/bin/mp3gain
+ncurses-dev:
+  debian:
+    package: ncurses-dev
+  rpm:
+    package: ncurses-devel
 nekovm:
   package: nekovm
   main: /usr/bin/neko
@@ -115,6 +120,11 @@ pandoc:
   name: Markup conversion tool
 parcellite:
   package: parcellite
+pcre:
+  package: pcre
+pcre-devel:
+  rpm: pcre-devel
+  deb: pcre-dev
 php-cgi:
   package: php-cli
 perl:
@@ -233,6 +243,13 @@ sitecopy:
 socat:
   pacakge: socat
   main: /usr/bin/socat
+sshfs:
+  rpm:
+    package: fuse-sshfs
+    main: /usr/bin/sshfs
+  debian:
+    package: sshfs
+    main: /usr/bin/sshfs
 systemd:
   package: systemd
   main: /bin/systemd

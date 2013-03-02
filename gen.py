@@ -14,7 +14,6 @@ def main():
 	opts, args = p.parse_args()
 
 	logging.basicConfig(level=logging.DEBUG)
-	assert len(args) == 0
 	conffile = opts.input
 	with open(conffile) as f:
 		conf = yaml.load(f.read())
@@ -22,7 +21,7 @@ def main():
 	prefix = opts.prefix
 	with open(templatefile) as f:
 		template = jinja2.Template(f.read())
-	process(prefix, conf, template)
+	process(prefix, conf, template, names=args)
 
 DISTS = {
 		'debian': 'Debian',
@@ -34,7 +33,7 @@ DISTS = {
 		'cygwin': 'Cygwin',
 	}
 
-def process(prefix, config, template):
+def process(prefix, config, template, names):
 	if not os.path.isdir(prefix):
 		os.makedirs(prefix)
 	files_in_output = set(os.listdir(prefix))
@@ -43,6 +42,9 @@ def process(prefix, config, template):
 	generated_files = set([])
 
 	for name, details in config.items():
+		if names and (name not in names):
+			print "skipping %s..." % (name,)
+			continue
 		if details is None:
 			details = {}
 		logging.debug("Processing %s" %(name,))
