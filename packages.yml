@@ -8,9 +8,6 @@
 # jquery interface for distromatch:
 # http://dde.debian.net/distromatch-frontend.htm
 
-bash:
-  package: bash
-  main: /bin/bash
 bsdtar:
   package: bsdtar
   main: /usr/bin/bsdtar
