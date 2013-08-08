@@ -8,6 +8,8 @@
 # jquery interface for distromatch:
 # http://dde.debian.net/distromatch-frontend.htm
 
+autoconf:
+  package: autoconf
 bsdtar:
   package: bsdtar
   main: /usr/bin/bsdtar
@@ -42,6 +44,9 @@ fakechroot:
   main: /usr/bin/fakechroot
 ffmpeg:
   main: /usr/bin/ffmpeg
+freetype-freeworld: #fedora rpmfusion
+  summary: "FreeType engine with patented subpixel rednering enabled"
+  package: freetype-freeworld
 funionfs:
   main: /usr/bin/funionfs
 glib-compile-schemas:
@@ -74,6 +79,11 @@ libnotify-bin:
   main: /usr/bin/notify-send
 libstdc++:
   package: libstdc++
+libtalloc:
+  package: libtalloc
+libtalloc-devel:
+  rpm: libtalloc-devel
+  debian: libtalloc-dev
 libxrender:
   debian: libxrender
   rpm: libXrender
@@ -96,14 +106,13 @@ mono-winforms:
 mp3gain:
   package: mp3gain
   main: /usr/bin/mp3gain
+nautilus-open-terminal:
+  package: nautilus-open-terminal
 ncurses-dev:
   debian:
     package: ncurses-dev
   rpm:
     package: ncurses-devel
-nekovm:
-  package: nekovm
-  main: /usr/bin/neko
 numpy:
   rpm: numpy
   debian: python-numpy
@@ -156,8 +165,12 @@ python-zeromq:
   package: python-zmq
 python-devel:
   summary: python development files
-  debian: python-dev
-  rpm: python-devel
+  debian:
+    - python-dev
+    - python3-dev
+  rpm:
+    - python-devel
+    - python3-devel
 python-imaging:
   summary: Python Imaging Library (PIL)
   package: python-imaging

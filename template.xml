@@ -10,12 +10,12 @@
 	<publish mode="package" xmlns="http://gfxmonk.net/dist/0install"/>
 
 	{% if description %}
-		<description>{{description}}</description>
+	<description>{{description}}</description>
 	{% else %}
 		{% if summary %}
-			<description>{{summary}}</description>
+	<description>{{summary}}</description>
 		{% else %}
-			<description>{{name}} (package implementation)</description>
+	<description>{{name}} (package implementation)</description>
 		{% endif %}
 	{% endif %}
 
@@ -24,11 +24,13 @@
 	{% endif %}
 
 	{% if package %}
-		{% if main %}
-	<package-implementation package="{{package}}" main="{{main}}"/>
-		{% else %}
-	<package-implementation package="{{package}}"/>
-		{% endif %}
+		{% for p in spec.package %}
+			{% if main %}
+	<package-implementation package="{{p}}" main="{{main}}"/>
+			{% else %}
+	<package-implementation package="{{p}}"/>
+			{% endif %}
+		{% endfor %}
 	{% endif %}
 
 	{% for feed in feeds %}
@@ -36,10 +38,12 @@
 	{% endfor %}
 
 	{% for distro, spec in distros.items() %}
-		{% if spec.main %}
-	<package-implementation package="{{spec.package}}" main="{{spec.main}}" distributions="{{spec.distro_name}}"/>
-		{% else %}
-	<package-implementation package="{{spec.package}}" distributions="{{spec.distro_name}}"/>
-		{% endif %}
+		{% for p in spec.package %}
+			{% if spec.main %}
+	<package-implementation package="{{p}}" main="{{spec.main}}" distributions="{{spec.distro_name}}"/>
+			{% else %}
+	<package-implementation package="{{p}}" distributions="{{spec.distro_name}}"/>
+			{% endif %}
+		{% endfor %}
 	{% endfor %}
 </interface>

@@ -5,6 +5,7 @@ import yaml
 from optparse import OptionParser
 import jinja2
 import subprocess
+import re
 
 def main():
 	p = OptionParser("Usage: %prog input.yml")
@@ -33,6 +34,10 @@ DISTS = {
 		'cygwin': 'Cygwin',
 	}
 
+def to_list(l):
+	if not isinstance(l, list): l = [l]
+	return l
+
 def process(prefix, config, template, names):
 	if not os.path.isdir(prefix):
 		os.makedirs(prefix)
@@ -47,26 +52,37 @@ def process(prefix, config, template, names):
 			continue
 		if details is None:
 			details = {}
-		logging.debug("Processing %s" %(name,))
+		logging.debug("Processing %s: %r" %(name,details))
 		details['name'] = name
 
 		distros = {}
 		for dist_key, distro_name in DISTS.items():
 			if dist_key in details:
 				dist_details = details[dist_key]
-				if isinstance(dist_details, str) or isinstance(dist_details, unicode):
-					dist_details = {'package': dist_details}
+				if isinstance(dist_details, str) or isinstance(dist_details, unicode) or isinstance(dist_details, list):
+					dist_details = {'package': to_list(dist_details)}
+				else:
+					# ensure package is a list
+					dist_details['package'] = to_list(dist_details['package'])
 				dist_details['distro_name'] = distro_name
 				distros[dist_key] = dist_details
 		if not distros and 'package' not in details:
 			details['package'] = name
+
+		if 'package' in details:
+			# force list
+			details['package'] = to_list(details['package'])
 
 		details['distros'] = distros
 		output_filename = file_name(name)
 		generated_files.add(output_filename[len(prefix)+1:])
 		with open(output_filename, 'w') as output:
 			logging.debug("rendering template with values: %r" % (distros,))
-			output.write(template.render(details))
+			contents = template.render(details)
+			print contents
+			contents = re.sub('^\s*\n', '', contents, flags=re.MULTILINE)
+			print contents
+			output.write(contents)
 
 		subprocess.check_call(['0publish', '--xmlsign', output_filename])
 		logging.info("generated %s" % (output_filename,))
