@@ -24,7 +24,7 @@
 	{% endif %}
 
 	{% if package %}
-		{% for p in spec.package %}
+		{% for p in package %}
 			{% if main %}
 	<package-implementation package="{{p}}" main="{{main}}"/>
 			{% else %}

@@ -35,7 +35,8 @@ DISTS = {
 	}
 
 def to_list(l):
-	if not isinstance(l, list): l = [l]
+	if not isinstance(l, list):
+		l = [l]
 	return l
 
 def process(prefix, config, template, names):
@@ -77,14 +78,12 @@ def process(prefix, config, template, names):
 		output_filename = file_name(name)
 		generated_files.add(output_filename[len(prefix)+1:])
 		with open(output_filename, 'w') as output:
-			logging.debug("rendering template with values: %r" % (distros,))
+			logging.debug("rendering template with values: %r" % (details,))
 			contents = template.render(details)
-			print contents
 			contents = re.sub('^\s*\n', '', contents, flags=re.MULTILINE)
-			print contents
 			output.write(contents)
 
-		subprocess.check_call(['0publish', '--xmlsign', output_filename])
+		# subprocess.check_call(['0publish', '--xmlsign', output_filename])
 		logging.info("generated %s" % (output_filename,))
 
 	for unexpected_file in files_in_output.difference(generated_files):
