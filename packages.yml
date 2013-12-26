@@ -37,6 +37,8 @@ eog:
   summary: Eye of Gnome - image viewer
   package: eog
   main: /usr/bin/eog
+exaile:
+  main: /usr/bin/exaile
 expect:
   summary: Programmatically control TTY sessions
   package: expect
@@ -65,6 +67,12 @@ imagemagick:
   homepage: http://www.imagemagick.org/script/index.php
   rpm: ImageMagick
   debian: imagemagick
+libattr:
+  package: libattr
+libattr-devel:
+  package:
+    - libattr-devel
+    - libattr-dev
 libmono:
   rpm: mono-core
   debian: libmono2.0-cil
@@ -161,8 +169,7 @@ python3:
   main: /usr/bin/python3
   package: python3
 python-appindicator:
-python-zeromq:
-  package: python-zmq
+python-debian:
 python-devel:
   summary: python development files
   debian:
@@ -193,6 +200,8 @@ python-wnck:
   package: python-wnck
   debian: python-wnck
   rpm: gnome-python2-libwnck
+python-zeromq:
+  package: python-zmq
 qmake-qt4:
   rpm:
     package: qt-devel
@@ -262,7 +271,7 @@ sshfs:
     main: /usr/bin/sshfs
 systemd:
   package: systemd
-  main: /bin/systemd
+  main: /usr/lib/systemd/systemd
 tagpy:
   debian: python-tagpy
   rpm: python-tag
