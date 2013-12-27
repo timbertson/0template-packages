@@ -153,6 +153,8 @@ perl:
   gentoo:
     package: dev-lang/perl
     main: /usr/bin/perl
+pychecker:
+  main: /usr/bin/pychecker
 pycrypto:
   package: python-crypto
 pynotify:
