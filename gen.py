@@ -14,7 +14,7 @@ def main():
 	p.add_option('-t', '--template', default='template.xml', help="(%default)")
 	opts, args = p.parse_args()
 
-	logging.basicConfig(level=logging.DEBUG)
+	logging.basicConfig(level=logging.INFO)
 	conffile = opts.input
 	with open(conffile) as f:
 		conf = yaml.load(f.read())

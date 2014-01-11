@@ -54,6 +54,9 @@ funionfs:
 glib-compile-schemas:
   package: glib2
   main: /usr/bin/glib-compile-schemas
+golang:
+  package: golang
+  main: /usr/bin/go
 gthumb:
   package: gthumb
   main: /usr/bin/gthumb
@@ -271,6 +274,12 @@ sshfs:
   debian:
     package: sshfs
     main: /usr/bin/sshfs
+synergyc:
+  package: synergy
+  main: /use/bin/synergyc
+synergys:
+  package: synergy
+  main: /use/bin/synergys
 systemd:
   package: systemd
   main: /usr/lib/systemd/systemd
