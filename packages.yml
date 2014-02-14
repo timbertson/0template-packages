@@ -51,6 +51,8 @@ freetype-freeworld: #fedora rpmfusion
   package: freetype-freeworld
 funionfs:
   main: /usr/bin/funionfs
+glib2-devel:
+  package: glib2-devel
 glib-compile-schemas:
   package: glib2
   main: /usr/bin/glib-compile-schemas
@@ -76,6 +78,8 @@ libattr-devel:
   package:
     - libattr-devel
     - libattr-dev
+libcurl-devel:
+  package: libcurl-devel
 libmono:
   rpm: mono-core
   debian: libmono2.0-cil
@@ -124,6 +128,11 @@ ncurses-dev:
     package: ncurses-dev
   rpm:
     package: ncurses-devel
+ncurses-libs:
+  debian:
+    package: ncurses
+  rpm:
+    package: ncurses-libs
 numpy:
   rpm: numpy
   debian: python-numpy
@@ -142,8 +151,6 @@ pcre:
 pcre-devel:
   rpm: pcre-devel
   deb: pcre-dev
-php-cgi:
-  package: php-cli
 perl:
   package: perl
   main: /usr/bin/perl
@@ -156,6 +163,17 @@ perl:
   gentoo:
     package: dev-lang/perl
     main: /usr/bin/perl
+php-cgi:
+  package: php-cli
+pillow:
+  summary: Python Imaging Library (PIL)
+  package: pillow
+pillow-tk:
+  summary: Python Imaging Library TK components
+  rpm:
+    package: pillow-tk
+  debian:
+    package: pillow
 pychecker:
   main: /usr/bin/pychecker
 pycrypto:
@@ -382,6 +400,9 @@ startup-notification-dev:
 gtk3-dev:
   rpm: gtk3-devel
   debian: libgtk3-dev
+gtk2-dev:
+  rpm: gtk2-devel
+  debian: libgtk2-dev
 pkgconfig:
   rpm: pkgconfig
   debian: pkg-config
