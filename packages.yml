@@ -165,15 +165,6 @@ perl:
     main: /usr/bin/perl
 php-cgi:
   package: php-cli
-pillow:
-  summary: Python Imaging Library (PIL)
-  package: pillow
-pillow-tk:
-  summary: Python Imaging Library TK components
-  rpm:
-    package: pillow-tk
-  debian:
-    package: pillow
 pychecker:
   main: /usr/bin/pychecker
 pycrypto:
@@ -210,6 +201,15 @@ python-imaging-tk:
     package: python-imaging-tk
   debian:
     package: python-imaging
+python-pillow:
+  summary: Python Imaging Library (PIL)
+  package: python-pillow
+python-pillow-tk:
+  summary: Python Imaging Library TK components
+  rpm:
+    package: python-pillow-tk
+  debian:
+    package: python-pillow
 python-twisted:
   summary: twisted framework for python
   description: Twisted is an event-driven networking engine written in Python and licensed under the MIT license.
@@ -324,6 +324,10 @@ waf:
   description: Waf is a Python-based framework for configuring, compiling and installing applications.
   package: waf
   summary: build tool
+wxgtk:
+  package: wxGTK
+wxgtk-devel:
+  package: wxGTK-devel
 wxpython:
   rpm: wxPython
   debian: python-wxgtk2.8
