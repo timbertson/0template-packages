@@ -236,13 +236,6 @@ qmake-qt4:
 qt-webkit:
   rpm: qt-webkit
   debian: libqtwebkit4
-rake:
-  debian:
-    package: rake
-    main: /usr/bin/rake
-  rpm:
-    package: rubygem-rake
-    main: /usr/bin/rake
 rlwrap:
   package: rlwrap
   main: /usr/bin/rlwrap
@@ -250,18 +243,6 @@ rtmpdump:
   homepage: http://rtmpdump.mplayerhq.hu/
   summary: rtmp stream toolkit
   package: rtmpdump
-ruby:
-  summary: ruby language interpreter
-  package: ruby
-  main: /usr/bin/ruby
-ruby-1.8:
-  summary: ruby language interpreter (1.8)
-  debian:
-    package: ruby1.8
-    main: /usr/bin/ruby1.8
-  rpm:
-    package: ruby
-    main: /usr/bin/ruby
 ruby-dev:
   summary: ruby development files
   debian:
