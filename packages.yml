@@ -10,12 +10,18 @@
 
 autoconf:
   package: autoconf
+automake:
+  package: automake
 bsdtar:
   package: bsdtar
   main: /usr/bin/bsdtar
 cabal:
   package: cabal-install
   main: /usr/bin/cabal
+camlp4:
+  main: /usr/bin/camlp4
+  rpm: ocaml-camlp4-devel
+  debian: camlp4
 cluster-ssh:
   package: clusterssh
   name: Cluster SSH
@@ -80,6 +86,12 @@ libattr-devel:
     - libattr-dev
 libcurl-devel:
   package: libcurl-devel
+liblzma:
+  rpm: xz
+  deb: liblzma
+liblzma-devel:
+  rpm: xz-devel
+  deb: liblzma-dev
 libmono:
   rpm: mono-core
   debian: libmono2.0-cil
@@ -107,6 +119,9 @@ libxrender-dev:
   rpm: libXrender-devel
 libXxf86vm:
   package: libXxf86vm
+m4:
+  package: m4
+  main: /usr/bin/m4
 mono:
   package: mono-core
 mono-runtime:
@@ -137,6 +152,8 @@ numpy:
   rpm: numpy
   debian: python-numpy
   summary: Python numeric computing library
+ocaml-findlib:
+  main: /usr/bin/ocamlfind
 openssl-dev:
   rpm: openssl-devel
   debian: libssl-dev
@@ -361,6 +378,12 @@ wget:
 zenity:
   package: zenity
   main: /usr/bin/zenity
+zlib:
+  rpm: zlib
+  deb: zlib
+zlib-devel:
+  rpm: zlib-devel
+  deb: zlib1g-dev
 zsh:
   package: zsh
   main: /bin/zsh
