@@ -12,9 +12,6 @@ autoconf:
   package: autoconf
 automake:
   package: automake
-bsdtar:
-  package: bsdtar
-  main: /usr/bin/bsdtar
 cabal:
   package: cabal-install
   main: /usr/bin/cabal
@@ -86,6 +83,9 @@ libattr-devel:
     - libattr-dev
 libcurl-devel:
   package: libcurl-devel
+libffi-devel:
+  rpm: libffi-devel
+  debian: libffi-dev
 liblzma:
   rpm: xz
   deb: liblzma
