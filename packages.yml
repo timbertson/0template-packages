@@ -68,7 +68,8 @@ gthumb:
 guake:
   main: /usr/bin/guake
 haml:
-  package: libhaml-ruby
+  debian: libhaml-ruby
+  rpm: rubygem-haml
   main: /usr/bin/haml
 imagemagick:
   summary: Convert, Edit, And Compose Images
@@ -411,6 +412,9 @@ gtk3-dev:
 gtk2-dev:
   rpm: gtk2-devel
   debian: libgtk2-dev
+gtksourceview2-dev:
+  rpm: gtksourceview2-devel
+  debian: libgtksourceview2.0-dev
 pkgconfig:
   rpm: pkgconfig
   debian: pkg-config
